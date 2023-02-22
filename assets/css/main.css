@@ -135,18 +135,50 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (min-width: 1281px) and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
 
+			h3.short {
+				display: none;
+			}
+
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 1181px) and (max-width: 1280px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
+			}
+
+			h3.major.label {
+				text-align: center;
+			}
+
+			h3.short {
+				display: none;
+			}
+
+		}
+
+		@media screen and (min-width: 981px) and (max-width: 1180px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+			h3.major.label {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 1180px) {
+
+			h3.major.label {
+				display: none;
 			}
 
 		}
@@ -2486,6 +2518,7 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 			width: 100%;
 			height: auto;
+
 		}
 
 			.image.fit img {
@@ -3079,6 +3112,10 @@ input, select, textarea {
 				width: calc(50% - 1em);
 			}
 
+			h3.major.label {
+				display: none;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3096,12 +3133,22 @@ input, select, textarea {
 					width: calc(100% + 3em);
 				}
 
+			.image.fit {
+				height: 5vh;
+				margin: 0;
+			}
+
+			h3.major.label {
+				display: none;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#two .inner {
-				height: 60vh;
+				height: 50vh;
+
 			}
 
 			#two .inner div {
@@ -3114,12 +3161,16 @@ input, select, textarea {
 				display: none;
 			}
 
-			h3.major.short {
+			h3.short {
 				font-size: .5em;
-				height: .5em;
-				border-bottom: none;
+				position: relative;
+				margin: 0;
 			}
 
+			.image.fit {
+				height: 5vh;
+				margin: 0;
+			}
 
 			.image.fit img {
 				width: 6vw;
@@ -3142,10 +3193,12 @@ input, select, textarea {
 
 			.skill {
 				width: 9vw;
-				height: 15vh;
+				height: 10vh;
 				display: flex;
 				flex-direction: column;
+				border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			}
+
 
 		}
 
