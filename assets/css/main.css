@@ -2469,8 +2469,8 @@ input, select, textarea {
 
 	.resume-img {
 		border-radius: 50%;
-		height: 275px;
-		width: 400px;
+		height: 250px;
+		width: 70%;
 		margin-left: 2em;
 		overflow: hidden;
 	}
@@ -3066,6 +3066,10 @@ input, select, textarea {
 
 /* Features */
 
+	#three .inner {
+		margin-right: 1em;
+	}
+
 	.features {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3107,6 +3111,13 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			#three .inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				margin-right: 0;
+			}
+
 			.features article {
 				margin: 1em 2em 1em 0;
 				width: calc(50% - 1em);
@@ -3119,6 +3130,13 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			#three .inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				margin-right: 0;
+			}
 
 			.features article {
 				padding: 1.5em 1.5em 0.1em 1.5em ;
@@ -3144,6 +3162,25 @@ input, select, textarea {
 
 		}
 
+
+		@media screen and (min-width: 481px) and (max-width: 735px) {
+
+			#three .inner {
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+				margin-right: 0;
+			}
+
+			.inner-img {
+				display: flex;
+				justify-content: center;
+			}
+
+		}
+
+
+
 		@media screen and (max-width: 480px) {
 
 			#two .inner {
@@ -3153,6 +3190,11 @@ input, select, textarea {
 
 			#two .inner div {
 				display: inline-flex;
+			}
+
+			.inner-img {
+				display: flex;
+				justify-content: center;
 			}
 
 
@@ -4122,6 +4164,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+
 
 			.wrapper.spotlight .inner {
 				display: block;
