@@ -3067,7 +3067,7 @@ input, select, textarea {
 /* Features */
 
 	#three .inner {
-		margin-right: 1em;
+		margin-right: 8%;
 	}
 
 	.features {
@@ -3113,9 +3113,7 @@ input, select, textarea {
 
 			#three .inner {
 				display: flex;
-				flex-direction: column;
-				justify-content: end;
-				margin-right: 0;
+				margin-right: -2em;
 			}
 
 			.features article {
